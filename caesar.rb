@@ -13,7 +13,6 @@ def rotate(char, num)
   end
 end
 
-
-def encode(str, num)
-  str.each_char.reduce(''){ |caesar_str, c| caesar_str + rotate(c, num) }
+def caesar_cipher(str, num)
+  str.each_char.reduce('') { |caesar_str, c| caesar_str + rotate(c, num) }
 end
